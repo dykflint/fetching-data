@@ -2,71 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>js validation</title>
+    <title>Document</title>
   <script defer src="main.js"></script></head>
-
   <body>
-    <div id="container">
-      <div id="sucolumn">
-        <div id="sutext">
-          <h1>Cartoon Network 2.0</h1>
+    <div id="weather-container">
+      <div id="today">
+        <div id="location">
+          <input type="text" id="search-input" />
         </div>
-        <div id="su-form">
-          <form id="suform" class="su-form">
-            <div id="email">
-              <div id="suemail">
-                <input type="text" name="email" placeholder="Email*" required />
-                <label for="email">Email*</label>
-              </div>
-            </div>
-            <div id="contactinfo">
-              <div id="sucountry">
-                <input
-                  type="text"
-                  name="country"
-                  placeholder="Country*"
-                  required
-                />
-                <label for="country">Country*</label>
-              </div>
-              <div id="suzip">
-                <input
-                  type="numeric"
-                  name="zipcode"
-                  placeholder="Zip Code*"
-                  required
-                />
-                <label for="zipcode">Zip Code*</label>
-              </div>
-            </div>
-            <div id="passwordconfirmation">
-              <div id="susetpassword">
-                <input
-                  type="password"
-                  name="setpassword"
-                  placeholder="Password*"
-                  required
-                />
-                <label for="setpassword">Password*</label>
-              </div>
-              <div id="suconfirmpassword">
-                <input
-                  type="password"
-                  name="confirmpassword"
-                  placeholder="Confirm Password*"
-                  required
-                />
-                <label for="confirmpassword">Confirm Password*</label>
-              </div>
-            </div>
-            <div id="su-confirm">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
+        <div id="rain-chance">
+          <img id="rain-chance-img" src="images/rainChance.svg" />
+          <div id="rain-chance-percentage">80%</div>
+        </div>
+        <img id="weather-icon" src="images/sunny.svg" />
+        <div id="temperature">20°C</div>
+      </div>
+      <div id="forecast">
+        <div id="day-one">
+          <div class="weekday">Tue</div>
+          <div class="min-max-temp">5°C/20°C</div>
+        </div>
+        <div id="day-two">
+          <div class="weekday">Wed</div>
+          <div class="min-max-temp">7°C/22°C</div>
+        </div>
+        <div id="day-three">
+          <div class="weekday">Wed</div>
+          <div class="min-max-temp">7°C/22°C</div>
         </div>
       </div>
     </div>
-    <!-- comment -->
   </body>
+  <script src="index.js"></script>
 </html>

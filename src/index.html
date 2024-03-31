@@ -2,11 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Document</title>
   </head>
-
   <body>
-    <!-- comment -->
+    <div id="weather-container">
+      <div id="today">
+        <div id="location">
+          <input type="text" id="search-input" />
+        </div>
+        <div id="rain-chance">
+          <img id="rain-chance-img" src="images/rainChance.svg" />
+          <div id="rain-chance-percentage">80%</div>
+        </div>
+        <img id="weather-icon" src="images/sunny.svg" />
+        <div id="temperature">20°C</div>
+      </div>
+      <div id="forecast">
+        <div id="day-one">
+          <div class="weekday">Tue</div>
+          <div class="min-max-temp">5°C/20°C</div>
+        </div>
+        <div id="day-two">
+          <div class="weekday">Wed</div>
+          <div class="min-max-temp">7°C/22°C</div>
+        </div>
+        <div id="day-three">
+          <div class="weekday">Wed</div>
+          <div class="min-max-temp">7°C/22°C</div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>
